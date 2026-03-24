@@ -339,6 +339,8 @@ def get_binary_string_patches(name: str) -> list[tuple[str, str, str]]:
         # See: https://github.com/TheQmaks/phantom-frida/issues/1
         #
         # "FRIDA\0" -> "XBNDL\0"
+        ("467269646100", "58626e646c00",
+          'residual "Frida\\0" -> "Xbndl\\0"'),
         ("465249444100", "58424e444c00",
          'residual "FRIDA\\0" -> "XBNDL\\0"'),
     ]
